@@ -21,6 +21,8 @@ dependencies {
     implementation("org.http4k:http4k-format-jackson:${http4kVersion}")
     implementation("org.http4k:http4k-server-jetty:${http4kVersion}")
     implementation(platform("org.http4k:http4k-bom:${http4kVersion}"))
+    implementation("org.http4k:http4k-multipart:4.12.0")
+
     testImplementation(kotlin("test"))
 }
 
