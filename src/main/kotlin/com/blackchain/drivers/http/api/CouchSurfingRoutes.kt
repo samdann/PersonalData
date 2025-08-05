@@ -14,7 +14,7 @@ import org.http4k.lens.MultipartFormFile
 import org.http4k.lens.Validator
 import org.http4k.lens.multipartForm
 
-private val uploadFile = MultipartFormFile.required("file")
+private val uploadFile = MultipartFormFile.required("document")
 private val uploadMasterDataBodyLens = Body.multipartForm(Validator.Strict, uploadFile).toLens()
 
 fun importCouchSurfingData(hub: PersonalDataScrapperHub) =
